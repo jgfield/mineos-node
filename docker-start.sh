@@ -1,5 +1,8 @@
 #!/bin/bash
 
+SCRIPTPATH=/usr/games/minecraft
+USER=mc
+
 # Changing password
 if [ ! -f $SCRIPTPATH/.initialized ]; then
     if [ "$PASSWORD" = "" ]; then
