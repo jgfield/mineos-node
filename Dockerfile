@@ -24,7 +24,7 @@ RUN npm install
 COPY . /usr/src/app
 
 #generate a cert. sync before generating to avoid an error
-RUN chmod +x generate-sslcert.sh; \
+RUN chmod +x generate-sslcert.sh docker-start.sh; \
   sync; \
   ./generate-sslcert.sh
 
@@ -32,3 +32,5 @@ RUN useradd mc; \
   echo "mc:admin" | chpasswd
 
 CMD [ "npm", "start" ]
+
+ENTRYPOINT ["./docker_start.sh"]
