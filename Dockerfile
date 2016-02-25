@@ -33,4 +33,4 @@ RUN useradd mc; \
 
 CMD [ "npm", "start" ]
 
-ENTRYPOINT ["./docker_start.sh"]
+ENTRYPOINT ["./docker-start.sh"]
