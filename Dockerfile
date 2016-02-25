@@ -31,6 +31,4 @@ RUN chmod +x generate-sslcert.sh docker-start.sh; \
 RUN useradd mc; \
   echo "mc:admin" | chpasswd
 
-CMD [ "npm", "start" ]
-
 ENTRYPOINT ["./docker-start.sh"]

@@ -10,3 +10,4 @@ if [ ! -f $SCRIPTPATH/.initialized ]; then
     sudo -u $USER touch $SCRIPTPATH/.initialized
 fi
 
+npm start
